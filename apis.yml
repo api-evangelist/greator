@@ -1,9 +1,31 @@
 aid: greator
 name: Greator
-description: 'Greator is a company surfaced as a portfolio company of hv-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Greator (formerly GEDANKENtanken, founded 2012) is Germany's largest personal-
+  development platform, headquartered in Cologne and serving roughly 234,000
+  customers. It runs a B2C ecosystem of free content (masterclasses, podcasts, a
+  YouTube channel, magazine articles and personality tests) alongside paid,
+  certified training programs such as The School of Life, Momentum Mastery, the
+  Finance Academy and TheKey speaking training. Greator also produces live
+  events including the annual Greator Festival (15,000+ attendees, 400+ speakers)
+  and operates Greator Business, a B2B corporate offering. The company was
+  surfaced as a portfolio company of HV Capital and added to the API Evangelist
+  network. Greator publishes no public developer API, developer portal, or
+  /.well-known discovery surface; this profile captures its identity, web
+  properties, and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/greator/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://greator.com/wp-content/uploads/2020/04/G_pur-web.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,13 +34,44 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Personal Development
+- Coaching
+- Online Learning
+- E-Learning
+- Wellness
+- Events
+- Germany
 apis: []
+common:
+- type: Website
+  url: https://greator.com/en/
+- type: HelpCenter
+  url: https://be.greator.com/helpcenter/home
+- type: Support
+  url: https://be.greator.com/helpcenter/home
+- type: Blog
+  url: https://greator.com/en/magazine/
+- type: Login
+  url: https://greator.com/en/login/
+- type: TermsOfService
+  url: https://greator.com/en/agb/
+- type: PrivacyPolicy
+  url: https://greator.com/en/data-protection/
+- type: GitHubOrganization
+  url: https://github.com/greator
+- type: DomainSecurity
+  url: security/greator-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

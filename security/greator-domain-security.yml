@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: probed
+source: 'dig + TLS/HTTP HEAD probe of greator.com (apis.yml Website host)'
+hosts:
+  - host: greator.com
+    https: true
+    tls_version: TLSv1.3
+    cert_verify: ok
+    server: cloudflare
+    hsts: false
+    hsts_max_age: null
+domains:
+  - domain: greator.com
+    dnssec: false
+    caa: []
+    spf: true
+    spf_record: 'v=spf1 include:_spf.google.com include:4472479.spf02.hubspotemail.net include:sendgrid.net include:mail.timmehosting.de ~all'
+    dmarc: true
+    dmarc_policy: quarantine
+    dmarc_subdomain_policy: none
+notes: >-
+  Website fronted by Cloudflare over TLS 1.3 with a valid certificate, but no
+  HSTS response header and no CAA records. Zone is not DNSSEC-signed. Email
+  authentication is configured: SPF present (Google/HubSpot/SendGrid senders)
+  and a DMARC record at p=quarantine (sp=none). Absence of CAA/HSTS/DNSSEC is
+  recorded as-observed, not inferred.

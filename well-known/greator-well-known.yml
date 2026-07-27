@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+host: https://greator.com
+source: 'live probe of https://greator.com/.well-known/*'
+documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+notes: >-
+  No /.well-known discovery surface published. Greator is a B2C personal-
+  development platform (courses, coaching, events); it exposes no public
+  developer API, OAuth/OIDC authorization server, API catalog, or AI plugin
+  manifest. All probes returned 404 — recorded as observed, no WellKnown /
+  SecurityTxt pointer emitted because nothing was found.
