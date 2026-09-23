@@ -1,8 +1,14 @@
 generated: '2026-07-19'
 method: searched
 host: https://greator.com
-source: 'live probe of https://greator.com/.well-known/*'
-documents:
+source: live probe of https://greator.com/.well-known/*
+notes: No /.well-known discovery surface published. Greator is a B2C personal- development platform (courses,
+  coaching, events); it exposes no public developer API, OAuth/OIDC authorization server, API catalog,
+  or AI plugin manifest. All probes returned 404 — recorded as observed, no WellKnown / SecurityTxt pointer
+  emitted because nothing was found.
+hosts:
+- host: https://greator.com
+  documents:
   - path: /.well-known/security.txt
     status: 404
   - path: /.well-known/openid-configuration
@@ -13,9 +19,8 @@ documents:
     status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
-notes: >-
-  No /.well-known discovery surface published. Greator is a B2C personal-
-  development platform (courses, coaching, events); it exposes no public
-  developer API, OAuth/OIDC authorization server, API catalog, or AI plugin
-  manifest. All probes returned 404 — recorded as observed, no WellKnown /
-  SecurityTxt pointer emitted because nothing was found.
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
