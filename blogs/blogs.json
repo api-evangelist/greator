@@ -5,7 +5,7 @@
       "source": "https://greator.com/feed/",
       "feed_url": "https://greator.com/feed/",
       "title": "",
-      "saved": 1,
+      "saved": 0,
       "method": "feed"
     },
     {
@@ -16,6 +16,13 @@
       "method": "discovered"
     },
     {
+      "source": "https://greator.com/en/magazine/feed/",
+      "feed_url": "https://greator.com/en/magazine/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://be.greator.com/helpcenter/home",
       "feed_url": "https://be.greator.com/helpcenter/home",
       "title": "",
@@ -23,6 +30,6 @@
       "method": "none"
     }
   ],
-  "post_count": 1,
-  "fetched": "2026-10-10T13:15:00Z"
+  "post_count": 12,
+  "fetched": "2026-10-17T14:53:57Z"
 }
